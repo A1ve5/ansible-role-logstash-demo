@@ -24,4 +24,4 @@ programs_on_boot:
 
 logstash_prod_example: True
 
-logstash_version: "1.5"
+logstash_version: "2.1"
