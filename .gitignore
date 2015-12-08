@@ -1,0 +1,4 @@
+logstash.conf
+redis.conf
+secrets.yml
+*.swp
