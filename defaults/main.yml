@@ -29,4 +29,6 @@ logstash_prod_config: "{{ prod_config_path }}/logstash.conf"
 es_template_demo_path: "../logstash/templates/es-template-demo.json"
 redis_prod_config: "{{ prod_config_path }}/redis.conf"
 
+es_template_name: "template-demo"
+
 logstash_version: "2.1"

@@ -46,7 +46,7 @@
 
   - name: remove the existing template
     uri: 
-     url: "http://localhost:9199/_template/template-demo"
+     url: "http://localhost:9199/_template/{{ es_template_name }}"
      method: "DELETE"
      return_content: yes
     register: removehttpout
@@ -56,7 +56,7 @@
 # The file sourced from git repo, not remote machine
   - name: install the template
     uri: 
-     url: "http://localhost:9199/_template/template-demo"
+     url: "http://localhost:9199/_template/{{ es_template_name }}"
      method: "PUT"
      body: "{{ lookup('file', 'es_template_demo_path') }}"
      body_format: json
