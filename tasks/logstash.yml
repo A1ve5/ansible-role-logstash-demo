@@ -58,7 +58,7 @@
     uri: 
      url: "http://localhost:9199/_template/template-demo"
      method: "PUT"
-     body: "{{ lookup('file', '{{ es_template_demo_path }}') }}"
+     body: "{{ lookup('file', 'es_template_demo_path') }}"
      body_format: json
     register: installestemplate
     when: estemplate.changed
