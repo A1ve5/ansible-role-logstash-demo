@@ -24,4 +24,9 @@ programs_on_boot:
 
 logstash_prod_example: True
 
+prod_config_path: "../logstash/config/prod_example/"
+logstash_prod_config: "{{ prod_config_path }}/logstash.conf"
+es_template_demo_path: "../logstash/templates/es-template-demo.json"
+redis_prod_config: "{{ prod_config_path }}/redis.conf"
+
 logstash_version: "2.1"
